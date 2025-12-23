@@ -1,0 +1,8 @@
+version: '3'  # Docker Compose version
+
+services:
+  web-app:    # Name of your service
+    build: .  # Build the image using the Dockerfile in the current directory (.)
+    ports:
+      - "5000:5000"  # Map port 5000 on your computer to port 5000 in the container
+    container_name: my-devops-project
